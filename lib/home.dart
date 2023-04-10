@@ -184,7 +184,15 @@ class Home extends ConsumerWidget {
                 ),
               ],
             ),
-            if (isConnected) Text("Speed: ${speedprovider.speed}")
+            SizedBox(height: 30.0),
+            if(isConnected) Text(
+              "Speed: ${speedprovider.speed}",
+              style: TextStyle(
+                  color: Colors.orangeAccent,
+                  letterSpacing: 2.0,
+                  fontSize: 28.0,
+                  fontWeight: FontWeight.bold),
+            ),
           ],
         ),
       ),
